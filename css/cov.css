@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*search bar in css*/
+#form{
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+/*#border{
+	border: 1px solid;
+}
+*/
+#about1{
+	margin-top: 15px;
+	background-color: #d2eef9;
+	padding: 16px;
+
+}
+#border1{
+	border: 1px solid;
+	padding: 20px;
+	margin-right: -10px;
+
+}
+
+.inner{
+    overflow: hidden;
+}
+
+.inner img{
+    transition:all 1.5s ease;
+}
+
+.inner:hover img{
+    transform:scale(1.5);
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			background: #3fb399;
+		}
+		.cont
+		{
+			width: 320px;
+			background-color: #fff;
+			margin: 120px auto;
+
+		}
+		table	
+		{
+			width: 100%;
+			border-color: #f4f4f4;
+		}
+		td	
+		{
+			width: 25%;
+		}
+		button
+		{
+			width: 100%;
+			height: 70px;
+			background: #ececec;
+		}
+		#input	
+		{
+			height: 120px;
+			font-size: 40px;
+			vertical-align: bottom;
+			text-align: right;
+			padding-right: 160px;
+			background: #eeccec;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="cont">
+		<table border cellspacing="0">
+			<tr>
+				<td colspan="4" id="input">0</td>
+			</tr>
+			<tr>
+				<td colspan="3"><button onclick="puchBtn(this);">AC</button></td>
+				<td><button onclick="puchBtn(this);">/</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="puchBtn(this);">7</button></td>
+				<td><button onclick="puchBtn(this);">8</button></td>
+				<td><button onclick="puchBtn(this);">9</button></td>
+				<td><button onclick="puchBtn(this);">*</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="puchBtn(this);">4</button></td>
+				<td><button onclick="puchBtn(this);">5</button></td>
+				<td><button onclick="puchBtn(this);">6</button></td>
+				<td><button onclick="puchBtn(this);">-</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="puchBtn(this);">1</button></td>
+				<td><button onclick="puchBtn(this);">2</button></td>
+				<td><button onclick="puchBtn(this);">3</button></td>
+				<td><button onclick="puchBtn(this);">+</button></td>
+			<tr>
+				<td colspan="2"><button onclick="puchBtn(this);">0</button></td>
+				<td><button onclick="puchBtn(this);">.</button></td>
+				<td><button onclick="puchBtn(this);">=</button></td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript">
+		var inputt = document.getElemtById("input");
+		function puchBtn(obj) {
+			var puched = obj.innerHTML;
+
+			if (puched =="=") 
+			{
+				input.innerHTML = eval(input.innerHTML);
+			}
+			else if (puched == "AC") {
+				input.innerHTML = '0';
+			} 
+			else	
+			{
+				if (input.innerHTML=='0')
+				 {
+				 	input.innerHTML =  puched;
+				 }
+				 else
+				 {
+				 	input.innerHTML += puched;
+				 }
+			}
+		}
+	</script>
+
+</body>
+</html>
